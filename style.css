@@ -1,0 +1,124 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: #333333;
+    background-color: #F1F1F1;
+}
+
+p {
+    width: 80%;
+    text-indent: 1cm;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+h2 {
+   font-family: Georgia, "Times New Roman", Times, serif;
+   font-size: 16px;
+   font-weight: bold;
+   color: #000033;
+}
+
+.term {
+    font-style: italic;
+    font-weight: bold;
+}
+
+table.comparison {
+    border-width: 2px;
+    border-style: inset;
+    border-color: #CCCCEF;
+    width: 60%;
+    border-collapse: collapse;
+}
+
+table.comparison td {
+    padding: 5px;
+    border-width: 0px;
+    border-color: #4400CC;
+    border-style: solid;
+}
+
+table.comparison tr.acryl {
+    font-style: italic;
+}
+
+
+/**************** Pseudo classes ****************/
+
+ 
+a:link {
+   color: #0033DD;
+   text-decoration: underline;
+   font-weight: bold;
+   display: inline;
+}
+ 
+a:visited {
+   text-decoration: underline;
+   font-weight: bold;
+   color: #0088FF;
+}
+
+ 
+a:hover {
+   color: #3333FF;
+   font-weight: bold;
+   text-decoration: underline;
+}
+ 
+a:active {
+   color: #33BBFF;
+   font-weight: bold;
+}
+ 
+/************************* ID's *************************/
+ 
+#navigation {
+   position: absolute;
+   width: 80%;
+   margin: 0;
+   margin-top: 0px;
+   font-weight: normal;
+   display: block;
+}
+
+#navigation a {
+    padding: 0 10px 0 10px;
+}
+
+#navigation ul li {
+    display: inline;
+    list-style: none;
+}
+
+#navigation ul li:hover {
+    background-color: #E0E0FF;
+}
+
+#centerDoc {
+   position: absolute;
+   padding: 20px 0 0 0; /*top right bottom left*/
+   margin-top: 75px;
+   margin-left: 50px;
+   padding-bottom:2cm;
+}
+
+#reference {
+    position: absolute;
+    width: 80%;
+    bottom: -15px;
+    margin-top: 2cm;
+    padding-top: 15px;
+    font-style: italic;
+    border-top: 1px solid black;
+}
+
+#reference ul li {
+    list-style: none;
+}

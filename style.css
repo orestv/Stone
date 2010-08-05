@@ -122,3 +122,12 @@ a:active {
 #reference ul li {
     list-style: none;
 }
+
+#selection {
+    border: 1px solid black;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 50px;
+}

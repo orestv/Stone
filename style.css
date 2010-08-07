@@ -176,3 +176,15 @@ img#imgView {
     position: relative;
     width: 100%;
 }
+
+a#navPrev {
+    position: absolute;
+    left: 5px;
+    top: 45%;
+}
+
+a#navNext {
+    position: absolute;
+    right: 5px;
+    top: 45%;
+}

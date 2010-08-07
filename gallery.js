@@ -1,8 +1,12 @@
+nCurrentId = 1;
+nMaxIds = 35;
+
 function show(id)
 {
+    nCurrentId = id;
     document.getElementById('greyBackground').style.visibility='visible';
     document.getElementById('largeView').style.visibility='visible';
-    document.getElementById('imgView').src = generateSampleString(id);
+    document.getElementById('imgView').src = generateSampleString(nCurrentIid);
 }
 
 function hide()
@@ -12,11 +16,17 @@ function hide()
     //document.getElementById('imgView').src = generateSampleString(id);
 }
 
+function next()
+{
+    nCurrentId = (nCurrentId + 1 + nMaxIds) % nMaxIds;
+    document.getElementById('imgView').src = generateSampleString(nCurrentIid);
+}
+
 function generateList()
 {
     var strUrl, div, img, centerDoc;
     centerDoc = document.getElementById('centerDoc');
-    for (var i = 1; i < 36; i++)
+    for (var i = 1; i <= nMaxIds; i++)
     {
         div = document.createElement('div');
         img = document.createElement('img');
@@ -30,7 +40,6 @@ function generateList()
         div.appendChild(img);
 
         centerDoc.appendChild(div);
-
     }
 }
 
@@ -38,3 +47,5 @@ function generateSampleString(id)
 {
     return 'stone_colors/sample ' + String(id) + '.jpg';
 }
+
+

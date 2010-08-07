@@ -6,7 +6,7 @@ function show(id)
     nCurrentId = id;
     document.getElementById('greyBackground').style.visibility='visible';
     document.getElementById('largeView').style.visibility='visible';
-    document.getElementById('imgView').src = generateSampleString(nCurrentIid);
+    document.getElementById('imgView').src = generateSampleString(nCurrentId);
 }
 
 function hide()
@@ -22,7 +22,7 @@ function nextImg()
     document.getElementById('imgView').src = generateSampleString(nCurrentId);
 }
 
-function previmg()
+function prevImg()
 {
     nCurrentId = (nCurrentId - 1 + nMaxIds) % nMaxIds;
     document.getElementById('imgView').src = generateSampleString(nCurrentId);

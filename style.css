@@ -33,7 +33,7 @@ table.comparison {
     border-width: 2px;
     border-style: inset;
     border-color: #CCCCEF;
-    width: 60%;
+    width: 90%;
     border-collapse: collapse;
 }
 
@@ -81,7 +81,7 @@ a:active {
  
 #navigation {
    position: absolute;
-   width: 80%;
+   width: 20%;
    margin: 0;
    margin-top: 0px;
    font-weight: normal;
@@ -93,7 +93,7 @@ a:active {
 }
 
 #navigation ul li {
-    display: inline;
+    display: block;
     list-style: none;
 }
 
@@ -104,9 +104,9 @@ a:active {
 #centerDoc {
    position: absolute;
    padding: 20px 0 0 0; /*top right bottom left*/
-   margin-top: 75px;
-   margin-left: 50px;
+   margin-left: 250px;
    padding-bottom:2cm;
+   width: 60%
 }
 
 #reference {
@@ -123,11 +123,56 @@ a:active {
     list-style: none;
 }
 
-#selection {
-    border: 1px solid black;
-    position: absolute;
+.galleryItem {
+    /*border: 1px solid black;*/
+    cursor: pointer;
+    position: relative;
     width: 100px;
     height: 100px;
+    margin: 5px;
+    /*
     left: 100px;
     top: 50px;
+    */
+    float: left;
+    overflow: hidden;
+}
+
+img.galleryImage {
+    width: 100%;
+}
+
+div#greyBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #747474;
+    opacity: .35;
+    visibility: hidden;
+}
+
+div#largeView {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    visibility: hidden;
+}
+
+div#innerView {
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+img#imgView {
+    position: relative;
+    width: 100%;
 }

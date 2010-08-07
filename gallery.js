@@ -16,17 +16,23 @@ function hide()
     //document.getElementById('imgView').src = generateSampleString(id);
 }
 
-function next()
+function nextImg()
 {
     nCurrentId = (nCurrentId + 1 + nMaxIds) % nMaxIds;
-    document.getElementById('imgView').src = generateSampleString(nCurrentIid);
+    document.getElementById('imgView').src = generateSampleString(nCurrentId);
+}
+
+function previmg()
+{
+    nCurrentId = (nCurrentId - 1 + nMaxIds) % nMaxIds;
+    document.getElementById('imgView').src = generateSampleString(nCurrentId);
 }
 
 function generateList()
 {
     var strUrl, div, img, centerDoc;
     centerDoc = document.getElementById('centerDoc');
-    for (var i = 1; i <= nMaxIds; i++)
+    for (var i = 0; i < nMaxIds; i++)
     {
         div = document.createElement('div');
         img = document.createElement('img');

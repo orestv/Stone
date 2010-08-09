@@ -124,22 +124,21 @@ a:active {
 }
 
 .galleryItem {
-    /*border: 1px solid black;*/
     cursor: pointer;
-    position: relative;
     width: 100px;
     height: 100px;
     margin: 5px;
-    /*
-    left: 100px;
-    top: 50px;
-    */
-    float: left;
+    padding: 5px;
+    /*float: left;*/
     overflow: hidden;
 }
 
 img.galleryImage {
-    width: 100%;
+    margin: 5px;
+    position: absolute;
+    width; 90px;
+    left: 0;
+    top: 0;
 }
 
 div#greyBackground {
@@ -155,10 +154,10 @@ div#greyBackground {
 
 div#largeView {
     position: absolute;
-    left: 25%;
-    top: 25%;
-    height: 50%;
-    width: 50%;
+    left: 20%;
+    top: 10%;
+    height: 80%;
+    width: 60%;
     background-color: white;
     visibility: hidden;
 }
@@ -168,23 +167,36 @@ div#innerView {
     height: 80%;
     left: 10%;
     top: 10%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    z-index: 5;
 }
 
 img#imgView {
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 
-a#navPrev {
+div.navPrev {
     position: absolute;
     left: 5px;
     top: 45%;
 }
 
-a#navNext {
+div.navNext {
     position: absolute;
     right: 5px;
     top: 45%;
+}
+
+div#dvStatus {
+
+}
+
+div#dvHide {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: middle;
+    z-index: 6;
 }

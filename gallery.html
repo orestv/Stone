@@ -9,7 +9,7 @@
 <script type="text/javascript" src="func.js"></script>
 <script type="text/javascript" src="gallery.js"></script>
 
-<title></title>
+<title>Галлерея</title>
 </head>
 <body onload="setMenu(); generateList();">
     <div id="navigation">
@@ -21,11 +21,18 @@
     </div>
     <div id="greyBackground" onclick="hide();"></div>
     <div id="largeView">
-        <a href="javascript: nextImg();" id="navNext">Next</a>
-        <div id="innerView">
-            <img id="imgView"/>
+        <div class="navPrev" onclick="move(-1);">
+            <img src="images/view_arrow_left.png"/>
         </div>
-        <a href="javascript: prevImg();" id="navPrev">Prev</a>
+        <div class="navNext" onclick="move(1);">
+            <img src="images/view_arrow_right.png"/>
+        </div>
+        <div id="innerView">
+            <img id="imgView" src="stone_colors/sample 1.jpg"/>
+        </div>
+        <div id="dvStatus">
+            <span style="text-align: middle;width: 100%; position:absolute;" id="spStatus">Here be status</span>
+        </div>
     </div>
 </body>
 </html>

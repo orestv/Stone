@@ -16,16 +16,24 @@ function hide()
     //document.getElementById('imgView').src = generateSampleString(id);
 }
 
-function nextImg()
+function move(direction)
 {
-    nCurrentId = (nCurrentId + 1 + nMaxIds) % nMaxIds;
-    document.getElementById('imgView').src = generateSampleString(nCurrentId);
+    switch (direction)
+    {
+        case 1:
+            nCurrentId += 1;
+            break;
+        case -1:
+            nCurrentId -= 1;
+            break;
+    }
+    nCurrentId = (nCurrentId + nMaxIds) % nMaxIds;
+    show(nCurrentId);
 }
 
-function prevImg()
+function showStatus(id, maxid)
 {
-    nCurrentId = (nCurrentId - 1 + nMaxIds) % nMaxIds;
-    document.getElementById('imgView').src = generateSampleString(nCurrentId);
+    
 }
 
 function generateList()
@@ -37,10 +45,23 @@ function generateList()
         div = document.createElement('div');
         img = document.createElement('img');
         div.setAttribute('class', 'galleryItem');
+        div.className = 'galleryItem';
         div.setAttribute('id', String(i));
-        div.setAttribute('onclick', 'show(' + String(i) + ');');
+        div.onclick = function()
+        {
+            show(i);
+        }
+        div.onmouseover = function(event)
+        {
+            event.srcElement.style.border = '1px solid black';
+        }
+        div.onmouseout = function(event)
+        {
+            event.srcElement.style.border = 'none';
+        }
 
         img.setAttribute('class', 'galleryImage');
+        img.className = 'galleryImage';
         img.setAttribute('src', generateSampleString(i));
 
         div.appendChild(img);

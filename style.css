@@ -129,13 +129,14 @@ a:active {
     width: 100px;
     height: 100px;
     margin: 10px;
+    border: 5px outset black;
     padding: 10px;
     float: left;
     overflow: hidden;
 }
 
 img.galleryImage {
-    position: absolute;
+    position: relative;
     width: 100px;
     left: 0;
     top: 0;

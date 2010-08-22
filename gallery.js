@@ -49,21 +49,24 @@ function generateList()
         div.setAttribute('id', String(i));
         div.onclick = function()
         {
-            show(i);
+            show(this.id);
         }
-        div.onmouseover = function(event)
-        {
-            event.srcElement.style.border = '1px solid black';
-        }
-        div.onmouseout = function(event)
-        {
-            event.srcElement.style.border = 'none';
-        }
+        
 
         img.setAttribute('class', 'galleryImage');
         img.className = 'galleryImage';
         img.setAttribute('src', generateSampleString(i));
-
+        
+        div.onmouseover = function(event)
+        {
+            return;
+            this.style.border = '1px solid black';
+        }
+        div.onmouseout = function(event)
+        {
+            return;
+            this.style.border_color = 'none';
+        }
         div.appendChild(img);
 
         centerDoc.appendChild(div);

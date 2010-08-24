@@ -21,10 +21,10 @@
     </div>
     <div id="greyBackground" onclick="hide();"></div>
     <div id="largeView">
-        <div class="navPrev" onclick="move(-1);">
+        <div class="galleryNavPrev" onclick="move(-1);">
             <img src="images/view_arrow_left.png"/>
         </div>
-        <div class="navNext" onclick="move(1);">
+        <div class="galleryNavNext" onclick="move(1);">
             <img src="images/view_arrow_right.png"/>
         </div>
         <div id="innerView">

@@ -12,15 +12,17 @@ function createRequestObject()
     return xmlhttp;
 }
 
-function setMenu(id)
+function setMenu()
 {
+    var nav = document.getElementById('navigation');
     var request = createRequestObject();
     request.onreadystatechange = function(){
         if (request.readyState == 4)
         {
-            document.getElementById('navigation').innerHTML = request.responseText;
+            nav.innerHTML = request.responseText;
         }
     }
+    nav.style.border = 'solid 1px black';
     request.open('GET', 'navigation.html', true);
     request.send(null);
 }

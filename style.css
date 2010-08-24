@@ -178,14 +178,14 @@ img#imgView {
     width: 100%;
 }
 
-div.navPrev {
+div.galleryNavPrev {
     cursor: pointer;
     position: absolute;
     left: 5px;
     top: 45%;
 }
 
-div.navNext {
+div.galleryNavNext {
     cursor: pointer;
     position: absolute;
     right: 5px;
@@ -198,4 +198,10 @@ div#dvStatus {
 
 div#dvHide {
     position: absolute;    
+}
+
+div.mainNavigationHeader {
+    display: block;
+    position: relative;
+    left: 20px;
 }

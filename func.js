@@ -22,7 +22,6 @@ function setMenu()
             nav.innerHTML = request.responseText;
         }
     }
-    nav.style.border = 'solid 1px black';
     request.open('GET', 'navigation.html', true);
     request.send(null);
 }

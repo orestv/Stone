@@ -11,8 +11,9 @@
 
 <title>Галлерея</title>
 </head>
-<body onload="setMenu(); generateList();">
+<body onload="generateList();">
     <div id="navigation">
+        <?php include('navigation.html');?>
     </div>
     <div id="centerDoc">
         <h1>Примеры используемых материалов</h1>

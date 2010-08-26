@@ -11,9 +11,8 @@
 
 <title></title>
 </head>
-<body onload="setMenu();">
-    <div id="navigation">
-    </div>
+<body>
+<?php include('navigation.html');?>
     <div id="centerDoc">
         <h2>Искусственный камень - относительно новый материал</h2>
         <p>

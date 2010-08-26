@@ -45,7 +45,6 @@ function generateList()
         img = document.createElement('img');
         div.setAttribute('class', 'galleryItem');
         div.className = 'galleryItem';
-        div.style.border = '3px inset gray';
         div.setAttribute('id', String(i));
         div.onclick = function()
         {
@@ -59,11 +58,11 @@ function generateList()
         
         div.onmouseover = function(event)
         {
-            this.style.border = '3px outset grey';
+            this.style.borderStyle = 'outset';
         }
         div.onmouseout = function(event)
         {
-            this.style.border = '3px inset grey';
+            this.style.borderStyle = 'inset';
         }
         var innerDiv = document.createElement('div');
         innerDiv.setAttribute('class', 'galleryItemInner');

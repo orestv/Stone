@@ -111,7 +111,7 @@ a:active {
     width: 100px;
     height: 100px;
     margin: 10px;
-    border: 5px outset black;
+    border: 3px inset #FEFEFE;
     padding: 10px;
     float: left;
     overflow: hidden;

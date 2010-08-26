@@ -16,6 +16,7 @@ h1 {
    font-weight: bold;
    position: relative;
    left: 20px;
+   border-bottom: 3px double;
 }
 
 h2 {

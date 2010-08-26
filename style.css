@@ -19,7 +19,7 @@ h1 {
 
 h2 {
    font-family: Georgia, "Times New Roman", Times, serif;
-   font-size: 16px;
+   font-size: 26px;
    font-weight: bold;
    color: #000033;
    position: relative;
@@ -84,6 +84,7 @@ a:active {
 
 #centerDoc {
    position: absolute;
+   top: 10px;
    padding: 10px 0 0 0; /*top right bottom left*/
    margin-left: 250px;
    padding-bottom:2cm;

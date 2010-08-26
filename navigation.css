@@ -20,6 +20,7 @@ div#mainNavigationMenu {
 }
 
 div#mainNavigationMenu ul li {
+    margin: 10px;
     list-style: none;
 }
 

@@ -10,10 +10,9 @@
 
 <title></title>
 </head>
-<body onload="setMenu();">
-    <div id="navigation">
-    </div>
-    <div id="centerDoc">
+<body>
+<?php include('navigation.html');?>
+        <div id="centerDoc">
 
     </div>
 </body>

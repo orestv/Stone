@@ -1,4 +1,5 @@
 div#mainNavigationHeader {
+    color: #020170;
     position:absolute;
     top:0px;
     width:270px;
@@ -22,6 +23,10 @@ div#mainNavigationMenu ul li {
     list-style: none;
 }
 
+div#mainNavigationMenu a {
+    color: #2040FF;
+}
+
 div#mainNavigationMenu li {
     left: 0px;
     display: block;
@@ -33,10 +38,15 @@ div#mainNavigationMenu li:hover {
     background-color: #E0E0FF;
 }
  
-
-
 div#mainNavigationContacts {
     position:absolute;
     top: 100px;
     left: 30px;
+}
+
+div#mainNavigationFooter {
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+
 }

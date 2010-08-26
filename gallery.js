@@ -25,7 +25,7 @@ function move(direction)
             nCurrentId -= 1;
             break;
     }
-    nCurrentId = (nCurrentId + nMaxIds) % nMaxIds;
+    nCurrentId = (nCurrentId + nMaxIds+1) % (nMaxIds+1);
     show(nCurrentId);
 }
 

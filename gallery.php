@@ -6,15 +6,15 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="navigation.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="func.js"></script>
 <script type="text/javascript" src="gallery.js"></script>
 
 <title>Галлерея</title>
 </head>
 <body onload="generateList();">
-    <div id="navigation">
+
         <?php include('navigation.html');?>
-    </div>
     <div id="centerDoc">
         <h1>Примеры используемых материалов</h1>
 

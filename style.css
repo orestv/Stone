@@ -80,35 +80,11 @@ a:active {
 }
  
 /************************* ID's *************************/
- 
-#navigation {
-   position: absolute;
-   width: 200px;
-   margin: 0;
-   margin-top: 0px;
-   font-weight: normal;
-   display: block;
-   overflow: hidden;
-   border: 1px solid black;
-}
 
-#navigation a {
-    padding: 10px 10px 0 10px;
-}
-
-#navigation li {
-    left: 0px;
-    display: block;
-    list-style: none;
-}
-
-#navigation li:hover {
-    background-color: #E0E0FF;
-}
 
 #centerDoc {
    position: absolute;
-   padding: 20px 0 0 0; /*top right bottom left*/
+   padding: 10px 0 0 0; /*top right bottom left*/
    margin-left: 250px;
    padding-bottom:2cm;
    width: 60%;
@@ -202,14 +178,4 @@ div#dvStatus {
 
 div#dvHide {
     position: absolute;    
-}
-
-div#mainNavigationHeader {
-    display: block;
-    position: absolute;
-    left: 20px;
-}
-
-div.mainNavigationMenu {
-    background-color: red;
 }

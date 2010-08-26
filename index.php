@@ -8,15 +8,15 @@
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="style.css" rel="stylesheet" type="text/css"/>
+<link href="navigation.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="func.js">
 
         </script>
 
     </head>
 
-    <body onload="setMenu();">
-        <div id="navigation">
-        </div>
+    <body>
+<?php include('navigation.html');?>
 
         <div id="centerDoc">
             <h1>Искусственный камень</h1>

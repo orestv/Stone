@@ -1,6 +1,3 @@
-nCurrentId = 0;
-nMaxIds = 34;
-
 function show(id)
 {
     nCurrentId = Number(id);
@@ -77,10 +74,3 @@ function generateList()
         centerDoc.appendChild(div);
     }
 }
-
-function generateSampleString(id)
-{
-    return 'stone_colors/sample ' + String(id) + '.jpg';
-}
-
-

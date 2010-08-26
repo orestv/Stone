@@ -2,6 +2,10 @@ table.contacts{
     font-size: 12px;
 }
 
+table.contacts tr {
+    margin: 15px;
+}
+
 div#mainNavigationMenu {
     position: absolute;
     top: 200px;

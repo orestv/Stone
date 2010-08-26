@@ -9,13 +9,14 @@
 <link href="navigation.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript">
 nCurrentId = 0;
-nMaxIds = 34;
+nMaxIds = 7;
 
 
 function generateSampleString(id)
 {
-    return 'stone_colors/sample ' + String(id) + '.jpg';
+    return 'examples/0' + String(id) + '.jpg';
 }
+
 </script>
 <script type="text/javascript" src="func.js"></script>
 <script type="text/javascript" src="gallery.js"></script>
@@ -26,7 +27,7 @@ function generateSampleString(id)
 
         <?php include('navigation.html');?>
     <div id="centerDoc">
-        <h2>Примеры используемых материалов</h2>
+        <h2>Примеры изделий</h2>
 
         
     </div>

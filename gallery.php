@@ -32,7 +32,10 @@
             <img id="imgView" src="stone_colors/sample 1.jpg"/>
         </div>
         <div id="dvStatus">
-            <span style="text-align: middle;width: 100%; position:absolute;" id="spStatus">Here be status</span>
+            <span id="spStatus">Here be status</span>
+        </div>
+        <div id="dvHide">
+            <a href="javascript: hide();">Спрятать</a>
         </div>
     </div>
 </body>

@@ -115,6 +115,14 @@ a:active {
     overflow: hidden;
 }
 
+.galleryItemInner {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
 img.galleryImage {
     position: relative;
     width: 100px;
@@ -173,9 +181,16 @@ div.galleryNavNext {
 }
 
 div#dvStatus {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
 
 }
 
 div#dvHide {
-    position: absolute;    
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
 }

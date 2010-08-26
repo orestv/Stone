@@ -1,12 +1,13 @@
-nCurrentId = 1;
-nMaxIds = 35;
+nCurrentId = 0;
+nMaxIds = 34;
 
 function show(id)
 {
-    nCurrentId = id;
+    nCurrentId = Number(id);
     document.getElementById('greyBackground').style.visibility='visible';
     document.getElementById('largeView').style.visibility='visible';
     document.getElementById('imgView').src = generateSampleString(nCurrentId);
+    updateCounter(nCurrentId, nMaxIds);
 }
 
 function hide()
@@ -31,16 +32,17 @@ function move(direction)
     show(nCurrentId);
 }
 
-function showStatus(id, maxid)
+function updateCounter(id, maxid)
 {
-    
+   var dvStatus = document.getElementById('dvStatus');
+   dvStatus.innerHTML = '<i>'+(id+1)+'</i> из <i>'+(maxid+1)+'</i>';
 }
 
 function generateList()
 {
     var strUrl, div, img, centerDoc;
     centerDoc = document.getElementById('centerDoc');
-    for (var i = 0; i < nMaxIds; i++)
+    for (var i = 0; i <= nMaxIds; i++)
     {
         div = document.createElement('div');
         img = document.createElement('img');
@@ -66,7 +68,11 @@ function generateList()
         {
             this.style.border = '3px inset grey';
         }
-        div.appendChild(img);
+        var innerDiv = document.createElement('div');
+        innerDiv.setAttribute('class', 'galleryItemInner');
+        innerDiv.className = 'galleryItemInner';
+        div.appendChild(innerDiv);
+        innerDiv.appendChild(img);
 
         centerDoc.appendChild(div);
     }

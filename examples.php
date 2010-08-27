@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html>
 <head>
+
+<title><Аспис-Ω - Примеры изделий</title>
 <meta name="generator" content=
 "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org">
 

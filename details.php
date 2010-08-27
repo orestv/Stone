@@ -9,7 +9,7 @@
 <link href="navigation.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="func.js"></script>
 
-<title></title>
+<title>Аспис-Ω - Свойства материала</title>
 
 </head>
 <body>

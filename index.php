@@ -4,14 +4,13 @@
 
     <head>
 
-        <title>My Practice HTML Page</title>
-
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <link href="navigation.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="func.js">
 
         </script>
+<title>Аспис-Ω</title>
     </head>
 
     <body>

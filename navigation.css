@@ -19,24 +19,33 @@ div#mainNavigationMenu {
     width: 200px;
 }
 
+div#mainNavigationMenu a {
+    text-decoration: none;
+    display: block;
+    color: #2040AF;
+}
+
 div#mainNavigationMenu ul li {
     margin: 10px;
     list-style: none;
 }
 
-div#mainNavigationMenu a {
-    color: #2040FF;
-}
 
 div#mainNavigationMenu li {
     left: 0px;
     display: block;
-    list-style: none;
     margin-left: -15px;
+    cursor: pointer;
+    padding: 4px;
+    border: 3px outset gray;
+    text-align: center;
+    background-color: #E0E0E0;
 }
 
 div#mainNavigationMenu li:hover {
-    background-color: #E0E0FF;
+    /*background-color: #EFEFEF;*/
+    border-style: inset;
+    background-color: #D0D0D0;
 }
  
 div#mainNavigationContacts {

@@ -12,7 +12,7 @@
 <title>Аспис-Ω - История материала</title>
 </head>
 <body>
-<?php include('navigation.html');?>
+<?php include('navigation.php');?>
     <div id="centerDoc">
         <h2>Искусственный камень - относительно новый материал</h2>
         <p>

@@ -25,7 +25,7 @@ function generateSampleString(id)
 </head>
 <body onload="generateList();">
 
-        <?php include('navigation.html');?>
+        <?php include('navigation.php');?>
     <div id="centerDoc">
         <h2>Примеры используемых материалов</h2>
 

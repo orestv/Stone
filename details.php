@@ -13,7 +13,7 @@
 
 </head>
 <body>
-<?php include('navigation.html');?>
+<?php include('navigation.php');?>
     <div id="centerDoc">
             <h2>Изготовление искусственного камня</h2>
             <p>

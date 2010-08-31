@@ -30,16 +30,22 @@
     </table>
 
 </div>
-
+<?php
+$arrMenu = array('index.php' => 'Кратко о главном',
+    'history.php' => 'История', 
+    'details.php' => 'Изготовление и свойства', 
+    'gallery.php' => 'Галлерея материалов', 
+    'examples.php' => 'Галлерея изделий');
+?>
 
 <div id="mainNavigationMenu">
     <ul>
-        <li><a href="index.php">Кратко о главном</a></li>
-        <li><a href="history.php">История</a></li>
-        <li><a href="details.php">Изготовление и свойства</a></li>
-        <li><a href="gallery.php">Галлерея материалов</a></li>
-        <li><a href="examples.php">Галлерея изделий</a></li>
-    </ul>
+<?php
+foreach ($arrMenu as $url => $name){
+    echo '<li><a href="'.$url.'">'.$name.'</a></li>';
+}
+?>
+   </ul>
 </div>
 
 <div id="mainNavigationFooter">

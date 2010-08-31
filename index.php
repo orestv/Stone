@@ -14,7 +14,7 @@
     </head>
 
     <body>
-<?php include('navigation.html');?>
+<?php include('navigation.php');?>
         <div id="centerDoc">
             <h2>Искусственный камень</h2>
             <p>

@@ -31,6 +31,9 @@
 
 </div>
 <?php
+
+$strMenuItem = '<li><a href="%s">%s</a></li>';
+
 $arrMenu = array('index.php' => 'Кратко о главном',
     'history.php' => 'История', 
     'details.php' => 'Изготовление и свойства', 
@@ -42,7 +45,7 @@ $arrMenu = array('index.php' => 'Кратко о главном',
     <ul>
 <?php
 foreach ($arrMenu as $url => $name){
-    echo '<li><a href="'.$url.'">'.$name.'</a></li>';
+    printf($strMenuItem, $url, $name);
 }
 ?>
    </ul>

@@ -26,10 +26,9 @@ div#mainNavigationMenu a {
 }
 
 div#mainNavigationMenu ul li {
-    margin: 10px;
+    margin: 6px;
     list-style: none;
 }
-
 
 div#mainNavigationMenu li {
     left: 0px;
@@ -37,7 +36,7 @@ div#mainNavigationMenu li {
     margin-left: -15px;
     cursor: pointer;
     padding: 4px;
-    border: 3px outset gray;
+    border: 1px outset gray;
     text-align: center;
     background-color: #E0E0E0;
 }

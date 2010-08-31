@@ -36,9 +36,9 @@ $strMenuItem = '<li><a href="%s">%s</a></li>';
 
 $arrMenu = array('index.php' => 'Кратко о главном',
     'history.php' => 'История', 
+    'gallery.php' => 'Гама кольорів', 
     'details.php' => 'Изготовление и свойства', 
-    'gallery.php' => 'Галлерея материалов', 
-    'examples.php' => 'Галлерея изделий');
+    'examples.php' => 'Галерея виробів');
 ?>
 
 <div id="mainNavigationMenu">

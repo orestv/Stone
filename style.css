@@ -11,13 +11,13 @@ p {
 }
 
 h1 {
-   font-family: Georgia, "Times New Roman", Times, serif;
-   color: #FF9F00;
-   font-size: 50px;
-   font-weight: bold;
-   position: relative;
-   left: 20px;
-   border-bottom: 3px double;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #FF9F00;
+    font-size: 50px;
+    font-weight: bold;
+    left: 20px;
+    margin-bottom: 0px;
+    float: left;
 }
 
 h2 {
@@ -55,42 +55,42 @@ table.comparison tr.acryl {
 
 /**************** Pseudo classes ****************/
 
- 
+
 a:link {
-   color: #0033DD;
-   text-decoration: underline;
-   font-weight: bold;
-   display: inline;
-}
- 
-a:visited {
-   text-decoration: underline;
-   font-weight: bold;
-   color: #0088FF;
+    color: #0033DD;
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline;
 }
 
- 
+a:visited {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0088FF;
+}
+
+
 a:hover {
-   color: #3333FF;
-   font-weight: bold;
-   text-decoration: underline;
+    color: #3333FF;
+    font-weight: bold;
+    text-decoration: underline;
 }
- 
+
 a:active {
-   color: #33BBFF;
-   font-weight: bold;
+    color: #33BBFF;
+    font-weight: bold;
 }
- 
+
 /************************* ID's *************************/
 
 
 #centerDoc {
-   position: absolute;
-   top: 90px;
-   padding: 10px 0 0 0; /*top right bottom left*/
-   margin-left: 300px;
-   padding-bottom:2cm;
-   width: 60%;
+    position: absolute;
+    top: 90px;
+    padding: 10px 0 0 0; /*top right bottom left*/
+    margin-left: 300px;
+    padding-bottom:2cm;
+    width: 60%;
 }
 
 #reference {
@@ -193,7 +193,7 @@ div#dvStatus {
 
 div#dvHide {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     width: 100%;
     text-align: center;
 }

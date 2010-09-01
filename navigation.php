@@ -1,5 +1,30 @@
+<?php
+
+$strMenuItem = '<div class="menuItem"><a href="%s">%s</a></div>';
+
+$arrMenu = array('index.php' => 'Головна',
+    'examples.php' => 'Галерея виробів',
+    'gallery.php' => 'Гама кольорів', 
+    '#' => 'Наші можливості',
+    'history.php' => 'Догляд за виробами', 
+    'details.php' => 'Контакти', 
+    );
+?>
+
 <div id="mainNavigationHeader">
     <h1>Аспис-Ω</h1>
+    <div id="mainNavigationLogo">
+        Here be da logo!
+    </div>
+    <div id="mainNavigationMenu">
+
+        <?php
+        foreach ($arrMenu as $url => $name){
+            printf($strMenuItem, $url, $name);
+        }
+
+    ?>
+    </div> 
 </div>
 
 <div id="mainNavigationContacts">
@@ -29,26 +54,6 @@
         </tr>
     </table>
 
-</div>
-<?php
-
-$strMenuItem = '<li><a href="%s">%s</a></li>';
-
-$arrMenu = array('index.php' => 'Кратко о главном',
-    'history.php' => 'История', 
-    'gallery.php' => 'Гама кольорів', 
-    'details.php' => 'Изготовление и свойства', 
-    'examples.php' => 'Галерея виробів');
-?>
-
-<div id="mainNavigationMenu">
-    <ul>
-<?php
-foreach ($arrMenu as $url => $name){
-    printf($strMenuItem, $url, $name);
-}
-?>
-   </ul>
 </div>
 
 <div id="mainNavigationFooter">

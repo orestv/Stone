@@ -1,13 +1,13 @@
 <?php
 
-$strMenuItem = '<div class="menuItem"><a href="%s">%s</a></div>';
+$strMenuItem = '<div class="menuItem"><a href="%1$s.php">%2$s</a></div>';
 
-$arrMenu = array('index.php' => 'Головна',
-    'examples.php' => 'Галерея виробів',
-    'gallery.php' => 'Гама кольорів', 
+$arrMenu = array('index' => 'Головна',
+    'examples' => 'Галерея виробів',
+    'gallery' => 'Гама кольорів', 
     '#' => 'Наші можливості',
-    'history.php' => 'Догляд за виробами', 
-    'details.php' => 'Контакти', 
+    'history' => 'Догляд за виробами', 
+    'details' => 'Контакти', 
     );
 ?>
 
@@ -19,8 +19,8 @@ $arrMenu = array('index.php' => 'Головна',
     <div id="mainNavigationMenu">
 
         <?php
-        foreach ($arrMenu as $url => $name){
-            printf($strMenuItem, $url, $name);
+        foreach ($arrMenu as $id => $name){
+            printf($strMenuItem, $id, $name);
         }
 
     ?>

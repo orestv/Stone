@@ -10,8 +10,6 @@ div#mainNavigationHeader {
 }
 
 table.contacts{
-    position: relative;
-    top: 150px;
     font-size: 12px;
 }
 
@@ -74,7 +72,7 @@ div#mainNavigationMenu li:hover {
  
 div#mainNavigationContacts {
     position:absolute;
-    top: 100px;
+    top: 310px;
     left: 30px;
 }
 

@@ -5,6 +5,10 @@ body {
     background-color: #90F1F1;
 }
 
+div {
+    border: 1px solid black;
+}
+
 p {
     width: 80%;
     text-indent: 1cm;

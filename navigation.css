@@ -2,13 +2,16 @@ div#mainNavigationHeader {
     color: #020170;
     position:absolute;
     top:0px;
-    width:90%;
+    width:95%;
+    left: 2.5%;
     float:left;
     border: 1px solid black;
     border-bottom: 3px double #FF9F00;
 }
 
 table.contacts{
+    position: relative;
+    top: 150px;
     font-size: 12px;
 }
 
@@ -25,15 +28,14 @@ div#mainNavigationMenu {
 
 div.menuItem {
     margin: 5px;
-    float: left;
+    display: run-in;
     width: 100px;
     text-align: center;
     border: 1px solid black;
-    height: 100%;
 }
 
 div#mainNavigationMenu a {
-    display: block;
+    margin: 5px;
     text-decoration: none;
     color: #2040AF;
 }

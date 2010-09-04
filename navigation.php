@@ -1,6 +1,6 @@
 <?php
 
-$strMenuItem = '<div class="menuItem"><a href="%1$s.php">%2$s</a></div>';
+$strMenuItem = '<a href="%1$s.php">%2$s</a>';
 
 $arrMenu = array('index' => 'Головна',
     'examples' => 'Галерея виробів',

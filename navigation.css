@@ -5,7 +5,7 @@ div#mainNavigationHeader {
     width:95%;
     left: 2.5%;
     float:left;
-    border: 1px solid black;
+    border: none;
     border-bottom: 3px double #FF9F00;
 }
 
@@ -44,8 +44,9 @@ div#mainNavigationLogo {
     bottom: 0px;
     left: 230px;
     width: 200px;
-    height: 80px;
-    border: 1px solid black;
+    height: 100px;
+    border: none;
+    background-image: url('sunrise.png');
 }
 
 div#mainNavigationMenu ul li {

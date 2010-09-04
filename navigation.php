@@ -14,7 +14,6 @@ $arrMenu = array('index' => 'Головна',
 <div id="mainNavigationHeader">
     <h1>Аспис-Ω</h1>
     <div id="mainNavigationLogo">
-        Here be da logo!
     </div>
     <div id="mainNavigationMenu">
 

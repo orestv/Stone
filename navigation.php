@@ -25,10 +25,9 @@ $arrMenu = array('index' => 'Головна',
         ?>
         </tr></table>
     </div> 
-    <hr style="width: 100%;border-bottom: 1px double #FF9F00;"/>
-    <div id="mainNavigationMotto">
-        Супер. Пафосний. Девіз.
-    </div>
+</div>
+<div id="mainNavigationMotto">
+    Супер. Пафосний. Девіз.
 </div>
 
 <div id="mainNavigationContacts">

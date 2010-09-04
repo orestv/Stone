@@ -6,7 +6,7 @@ div#mainNavigationHeader {
     left: 2.5%;
     float:left;
     border-bottom: 3px double #FF9F00;
-    border-bottom: none;
+    height: 100px;
 }
 
 table.contacts{
@@ -114,6 +114,6 @@ div#mainNavigationMotto {
     left: 25%;
     color: #AF7F00;
     position: relative;
-    top: 0px;
+    top: 100px;
 
 }

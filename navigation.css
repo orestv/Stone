@@ -5,8 +5,8 @@ div#mainNavigationHeader {
     width:95%;
     left: 2.5%;
     float:left;
-    border: none;
     border-bottom: 3px double #FF9F00;
+    border-bottom: none;
 }
 
 table.contacts{
@@ -17,36 +17,60 @@ table.contacts tr {
     margin: 15px;
 }
 
+
 div#mainNavigationMenu {
-    border: 1px solid black;
-    position: absolute;
-    right: 10px;
-    bottom: 0px;
+    position: relative;
+    top: 50px;
 }
 
-div.menuItem {
-    margin: 5px;
-    display: run-in;
-    width: 100px;
+table.menuItem {
+    font-size: 12px;
+    margin: 2px;
+    height: 50px;
     text-align: center;
-    border: 1px solid black;
+    border-spacing: 0px;
 }
+
+td.buttonBorder {
+    padding: 0px;
+    margin: 0px;
+    width: 5px;
+
+}
+
+td.tdLeft {
+    background: #90F1F1 url('images/tdLeft.png');
+}
+
+td.tdCenter {
+    width: 90px;
+    background: #90F1F1 url('images/tdCenter.png');
+}
+
+td.tdRight {
+    background: #90F1F1 url('images/tdRight.png');
+}
+
 
 div#mainNavigationMenu a {
+    display: block;
     margin: 5px;
     text-decoration: none;
     color: #2040AF;
 }
 
+div#mainNavigationMenu a:hover {
+    color: #D0D0A0;
+}
+
 div#mainNavigationLogo {
-    position: absolute;
     float: left;
     bottom: 0px;
     left: 230px;
     width: 200px;
     height: 100px;
     border: none;
-    background-image: url('sunrise.png');
+    background-image: url('images/sunrise.png');
 }
 
 div#mainNavigationMenu ul li {
@@ -72,6 +96,7 @@ div#mainNavigationMenu li:hover {
 }
  
 div#mainNavigationContacts {
+    display: none;
     position:absolute;
     top: 310px;
     left: 30px;
@@ -81,5 +106,14 @@ div#mainNavigationFooter {
     font-size: 10px;
     position: absolute;
     bottom: 5px;
+
+}
+
+div#mainNavigationMotto {
+    font-size: 16px;
+    left: 25%;
+    color: #AF7F00;
+    position: relative;
+    top: 0px;
 
 }

@@ -2,11 +2,7 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 14px;
     color: #333393;
-    background-color: #90F1F1;
-}
-
-div {
-    border: 1px solid black;
+    background: #90F1F1;
 }
 
 p {
@@ -90,9 +86,9 @@ a:active {
 
 #centerDoc {
     position: absolute;
-    top: 120px;
-    padding: 10px 0 0 0; /*top right bottom left*/
-    margin-left: 300px;
+    top: 150px;
+    padding: 10px;
+    left: 20%;
     padding-bottom:2cm;
     width: 60%;
     background-color: white;

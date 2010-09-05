@@ -3,7 +3,7 @@ function show(id)
     nCurrentId = Number(id);
     document.getElementById('greyBackground').style.visibility='visible';
     document.getElementById('largeView').style.visibility='visible';
-    document.getElementById('imgView').src = generateSampleString(nCurrentId);
+    document.getElementById('imgView').src = generateSampleUrl(nCurrentId);
     updateCounter(nCurrentId, nMaxIds);
 }
 
@@ -31,8 +31,8 @@ function move(direction)
 
 function updateCounter(id, maxid)
 {
-   var dvStatus = document.getElementById('dvStatus');
-   dvStatus.innerHTML = '<i>'+(id+1)+'</i> из <i>'+(maxid+1)+'</i>';
+    var strName = generateSampleName(id);
+    dvStatus.innerHTML = '<i>'+strName+'</i>';
 }
 
 function generateList()
@@ -51,10 +51,9 @@ function generateList()
             show(this.id);
         }
         
-
         img.setAttribute('class', 'galleryImage');
         img.className = 'galleryImage';
-        img.setAttribute('src', generateSampleString(i));
+        img.setAttribute('src', generateSampleUrl(i));
         
         div.onmouseover = function(event)
         {
@@ -67,9 +66,15 @@ function generateList()
         var innerDiv = document.createElement('div');
         innerDiv.setAttribute('class', 'galleryItemInner');
         innerDiv.className = 'galleryItemInner';
+
+        var nameDiv = document.createElement('div');
+        nameDiv.setAttribute('class', 'dvSamplename');
+        nameDiv.className = 'dvSampleName';
+        nameDiv.innerHTML = generateSampleName(i);
+
+        div.appendChild(nameDiv);
         div.appendChild(innerDiv);
         innerDiv.appendChild(img);
-
         centerDoc.appendChild(div);
     }
 }

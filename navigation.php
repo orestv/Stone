@@ -1,13 +1,13 @@
 <?php
 
-$strMenuItem = '<td class="buttonBorder tdLeft"></td><td class="tdCenter"><a href="%1$s.php">%2$s</a></td><td class="buttonBorder tdRight"></td><td></td>';
+$strMenuItem = '<td class="buttonBorder tdLeft"></td><td class="tdCenter"><a href="%1$s">%2$s</a></td><td class="buttonBorder tdRight"></td><td></td>';
 
-$arrMenu = array('index' => 'Головна',
-    'examples' => 'Галерея виробів',
-    'gallery' => 'Гама кольорів', 
+$arrMenu = array('index.php' => 'Головна',
+    'examples.php' => 'Галерея виробів',
+    'materials.php' => 'Гама кольорів', 
     '#' => 'Наші можливості',
-    'history' => 'Догляд за виробами', 
-    'details' => 'Контакти', 
+    'history.php' => 'Догляд за виробами', 
+    'details.php' => 'Контакти', 
     );
 ?>
 

@@ -1,53 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
-<html>
-<head>
-<title>Аспис-Ω - Примеры материалов</title>
-<meta name="generator" content=
-"HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org">
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="style.css" rel="stylesheet" type="text/css"/>
-<link href="navigation.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript">
-nCurrentId = 0;
-nMaxIds = 34;
-
-
-function generateSampleString(id)
-{
-    return 'stone_colors/sample ' + String(id) + '.jpg';
+<?php
+function generateFileArray($strDirName) {
+    if (substr($strDirName, -1) != '/') $strDirName .= '/';
+    $retValue = array();
+    $dir = @dir($strDirName);
+    while (false !==($entry = $dir->read())){
+        if ($entry == '.' || $entry == '..')
+            continue;
+        if (is_readable($strDirName.$entry)) {
+            $retValue[] = array(
+                "filename" => $strDirName.$entry,
+                "name" => substr($entry, 0, strrpos($entry, '.')));
+        }
+    }
+    return $retValue;
 }
-</script>
-<script type="text/javascript" src="func.js"></script>
-<script type="text/javascript" src="gallery.js"></script>
 
-<title>Галлерея</title>
-</head>
-<body onload="generateList();">
+function generateJavascriptList($arr){
+    $str = 'new Array(';
+    foreach($arr as $index => $entry) {
+        $str .= "{'filename': '".$entry['filename']."', 'name': '".$entry['name']."'},";
+    }
+    $str = substr($str, 0, strlen($str)-1);
+    $str .= ');';
 
-        <?php include('navigation.php');?>
-    <div id="centerDoc">
-        <h2>Примеры используемых материалов</h2>
+    return $str;
+}
 
-        
-    </div>
-    <div id="greyBackground" onclick="hide();"></div>
-    <div id="largeView">
+function generateGalleryDivs() {
+    return '
+        <div id="greyBackground" onclick="hide();"></div>
+        <div id="largeView">
         <div class="galleryNavPrev" onclick="move(-1);">
-            <img src="images/view_arrow_left.png"/>
+        <img src="images/view_arrow_left.png"/>
         </div>
         <div class="galleryNavNext" onclick="move(1);">
-            <img src="images/view_arrow_right.png"/>
+        <img src="images/view_arrow_right.png"/>
         </div>
         <div id="innerView">
-            <img id="imgView" src="stone_colors/sample 1.jpg"/>
+        <img id="imgView" src="stone_colors/sample 1.jpg"/>
         </div>
         <div id="dvStatus">
-            <span id="spStatus">Here be status</span>
+        <span id="spStatus"></span>
         </div>
         <div id="dvHide">
-            <a href="javascript: hide();">Спрятать</a>
+        <a href="javascript: hide();">Сховати</a>
         </div>
-    </div>
-</body>
-</html>
+        </div>';
+}
+?>

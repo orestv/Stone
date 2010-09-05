@@ -1,11 +1,11 @@
 <?php
 
-$strMenuItem = '<td class="buttonBorder tdLeft"></td><td class="tdCenter"><a href="%1$s">%2$s</a></td><td class="buttonBorder tdRight"></td><td></td>';
+$strMenuItem = '<td class="menuButton tdLeft"></td><td class="menuButton tdCenter"><a href="%1$s">%2$s</a></td><td class="menuButton tdRight"></td><td></td>';
 
 $arrMenu = array('index.php' => 'Головна',
     'examples.php' => 'Галерея виробів',
     'materials.php' => 'Гама кольорів', 
-    '#' => 'Наші можливості',
+    '#capabilities' => 'Наші можливості',
     'history.php' => 'Догляд за виробами', 
     'details.php' => 'Контакти', 
     );

@@ -31,11 +31,10 @@ table.menuItem {
     border-spacing: 0px;
 }
 
-td.buttonBorder {
+td.menuButton {
     padding: 0px;
     margin: 0px;
     width: 5px;
-
 }
 
 td.tdLeft {
@@ -45,6 +44,7 @@ td.tdLeft {
 td.tdCenter {
     width: 90px;
     background: #90F1F1 url('images/tdCenter.png');
+    background-repeat: no-repeat;
 }
 
 td.tdRight {
@@ -60,7 +60,7 @@ div#mainNavigationMenu a {
 }
 
 div#mainNavigationMenu a:hover {
-    color: #D0D0A0;
+    color: #8080F0;
 }
 
 div#mainNavigationLogo {

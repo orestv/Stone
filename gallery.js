@@ -1,5 +1,9 @@
+nScroll = 0;
+
 function show(id)
 {
+    nScroll = window.pageYOffset;
+    window.scroll(0, 0);
     nCurrentId = Number(id);
     document.getElementById('greyBackground').style.visibility='visible';
     document.getElementById('largeView').style.visibility='visible';
@@ -9,6 +13,7 @@ function show(id)
 
 function hide()
 {
+    window.scroll(0, nScroll);
     document.getElementById('greyBackground').style.visibility='hidden';
     document.getElementById('largeView').style.visibility='hidden';
     //document.getElementById('imgView').src = generateSampleString(id);

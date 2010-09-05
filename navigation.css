@@ -20,7 +20,7 @@ table.contacts tr {
 
 div#mainNavigationMenu {
     position: relative;
-    top: 50px;
+    top: 48px;
 }
 
 table.menuItem {
@@ -111,7 +111,7 @@ div#mainNavigationFooter {
 
 div#mainNavigationMotto {
     font-size: 16px;
-    left: 25%;
+    left: 270px;
     color: #AF7F00;
     position: relative;
     top: 100px;

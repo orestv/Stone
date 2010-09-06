@@ -10,7 +10,7 @@ $arrMenu = array('index.php' => 'Головна',
         'offers.php' => 'Пропозиції',
         'comparison.php' => 'Переваги'
     ),
-    'history.php' => 'Догляд за виробами', 
+    'care.php' => 'Догляд за виробами', 
     'contacts.php' => 'Контакти', 
     );
 ?>

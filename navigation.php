@@ -7,7 +7,7 @@ $arrMenu = array('index.php' => 'Головна',
     'materials.php' => 'Гама кольорів', 
     'menuCapabilities' => array(
         'ITEM_NAME' => 'Наші можливості',
-        'http://www.google.com' => 'Гугл',
+        'offers.php' => 'Пропозиції',
         'http://www.yandex.ru' => 'Яндекс'
     ),
     'history.php' => 'Догляд за виробами', 

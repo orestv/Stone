@@ -40,6 +40,7 @@ table.comparison {
     border-color: #CCCCEF;
     width: 90%;
     border-collapse: collapse;
+    color: #58371C;
 }
 
 table.comparison td {
@@ -109,5 +110,3 @@ a:active {
 #reference ul li {
     list-style: none;
 }
-
-

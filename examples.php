@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Аспис-Ω - Примеры изделий</title>
+<title>Приклади виробів</title>
 <meta name="generator" content=
 "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org">
 
@@ -36,7 +36,7 @@ nMaxIds = arrSamples.length;
 
         <?php include('navigation.php');?>
     <div id="centerDoc">
-        <h2>Примеры изделий</h2>
+        <h2>Приклади виробів</h2>
 
         
     </div>

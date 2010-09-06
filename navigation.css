@@ -103,11 +103,11 @@ div#mainNavigationContacts {
     left: 30px;
 }
 
-div#mainNavigationFooter {
+div.mainNavigationFooter {
     font-size: 10px;
-    position: absolute;
-    bottom: 5px;
-
+    position: fixed;
+    color: white;
+    bottom: 0%;
 }
 
 div#mainNavigationMotto {

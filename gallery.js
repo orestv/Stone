@@ -42,6 +42,7 @@ function updateCounter(id, maxid)
 
 function generateList()
 {
+    var footer = document.getElementById('mainNavigationFooter');
     var strUrl, div, img, centerDoc;
     centerDoc = document.getElementById('centerDoc');
     for (var i = 0; i <= nMaxIds; i++)
@@ -81,5 +82,7 @@ function generateList()
         div.appendChild(innerDiv);
         innerDiv.appendChild(img);
         centerDoc.appendChild(div);
+        footer.setAttribute('class', footer.getAttribute('class'));
+        footer.className = footer.className;
     }
 }

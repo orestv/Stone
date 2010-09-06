@@ -82,6 +82,6 @@ $arrMenu = array('index.php' => 'Головна',
 
 </div>
 
-<div id="mainNavigationFooter">
+<div id="mainNavigationFooter" class="mainNavigationFooter">
     © 2010 Orest Voloshchuk, orest.v@gmail.com
 </div>

@@ -9,16 +9,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="style.css" rel="stylesheet" type="text/css"/>
 <link href="navigation.css" rel="stylesheet" type="text/css"/>
+<link href="gallery.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript">
-nCurrentId = 0;
-nMaxIds = 7;
+<?php include('gallery.php')?>
 
+arrSamples = <?php echo generateJavascriptList(generateFileArray('examples'));?>
 
-function generateSampleString(id)
+function generateSampleUrl(id)
 {
-    return 'examples/0' + String(id) + '.jpg';
+    return arrSamples[id]['filename'];
 }
 
+function generateSampleName(id)
+{
+    return '';
+}
+
+nMaxIds = arrSamples.length;
 </script>
 <script type="text/javascript" src="func.js"></script>
 <script type="text/javascript" src="gallery.js"></script>
@@ -33,23 +40,6 @@ function generateSampleString(id)
 
         
     </div>
-    <div id="greyBackground" onclick="hide();"></div>
-    <div id="largeView">
-        <div class="galleryNavPrev" onclick="move(-1);">
-            <img src="images/view_arrow_left.png"/>
-        </div>
-        <div class="galleryNavNext" onclick="move(1);">
-            <img src="images/view_arrow_right.png"/>
-        </div>
-        <div id="innerView">
-            <img id="imgView" src="stone_colors/sample 1.jpg"/>
-        </div>
-        <div id="dvStatus">
-            <span id="spStatus">Here be status</span>
-        </div>
-        <div id="dvHide">
-            <a href="javascript: hide();">Спрятать</a>
-        </div>
-    </div>
-</body>
+        <?php echo generateGalleryDivs();?>
+    </body>
 </html>

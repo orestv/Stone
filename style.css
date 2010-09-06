@@ -3,10 +3,11 @@ body {
     font-size: 14px;
     color: #333393;
     background: #90F1F1;
+    background: #76F7FF;
 }
 
 p {
-    width: 80%;
+    width: 90%;
     text-indent: 1cm;
 }
 
@@ -92,7 +93,7 @@ a:active {
     padding-bottom:2cm;
     width: 90%;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 #reference {

@@ -5,7 +5,11 @@ $strMenuItem = '<td class="menuButton tdLeft"></td><td class="menuButton tdCente
 $arrMenu = array('index.php' => 'Головна',
     'examples.php' => 'Галерея виробів',
     'materials.php' => 'Гама кольорів', 
-    '#capabilities' => 'Наші можливості',
+    'menuCapabilities' => array(
+        'ITEM_NAME' => 'Наші можливості',
+        'http://www.google.com' => 'Гугл',
+        'http://www.yandex.ru' => 'Яндекс'
+    ),
     'history.php' => 'Догляд за виробами', 
     'details.php' => 'Контакти', 
     );
@@ -19,8 +23,25 @@ $arrMenu = array('index.php' => 'Головна',
         <table class="menuItem"><tr>
 
         <?php
-        foreach ($arrMenu as $id => $name){
-            printf($strMenuItem, $id, $name);
+        $strPopupMenus = '';
+        foreach ($arrMenu as $id => $value){
+            if (is_array($value)) {
+                $href = 'javascript: showPopup('.$id.');';
+                $name = $value['ITEM_NAME'];
+                $strPopupMenus .= '<div id="'.$id.'" class="menuPopupInner"><table class="menuItem"><tr>';
+                
+                foreach ($value as $id_ => $value_){
+                    if ($id_ == 'ITEM_NAME')
+                        continue;
+                    $strPopupMenus .= sprintf($strMenuItem, $id_, $value_);
+                }
+                $strPopupMenus .= '</tr></table></div>';
+            }
+            else{
+                $href = $id;
+                $name = $value;
+            }
+            printf($strMenuItem, $href, $name);
         }
         ?>
         </tr></table>
@@ -29,6 +50,8 @@ $arrMenu = array('index.php' => 'Головна',
 <div id="mainNavigationMotto">
     Супер. Пафосний. Девіз.
 </div>
+
+<div id="menuPopupContainer"><?php echo $strPopupMenus?></div>
 
 <div id="mainNavigationContacts">
     <table class="contacts">

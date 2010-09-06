@@ -12,6 +12,36 @@ function createRequestObject()
     return xmlhttp;
 }
 
+function hideAllPopups()
+{
+    var dvMenu = document.getElementById('menuPopupContainer');
+    if (dvMenu.hasChildNodes())
+    {
+        var x;
+        for (x = 0; x < dvMenu.childNodes.length; x++)
+        {
+            dvMenu.childNodes[x].style.visibility = 'hidden';
+        }
+    }
+
+}
+
+function showPopup(popup)
+{
+    hideAllPopups();
+    popup.style.visibility = 'visible';
+    fadeIn(popup.id, 0.);
+}
+
+function fadeIn(id, opacity)
+{
+   if (opacity < 1.)
+   {
+       document.getElementById(id).style.opacity = String(opacity);
+       setTimeout('fadeIn(\'' + id + '\', ' + String(opacity+0.1) + ');', 50);
+   }
+}
+
 function setMenu()
 {
     var nav = document.getElementById('navigation');

@@ -22,7 +22,6 @@ div#mainNavigationMenu {
     position: relative;
     top: 48px;
     right: 1px;
-    width: 1px;
 }
 
 table.menuItem {
@@ -54,14 +53,14 @@ td.tdRight {
 }
 
 
-div#mainNavigationMenu a {
+table.menuItem a{
     display: block;
     margin: 5px;
     text-decoration: none;
     color: #2040AF;
 }
 
-div#mainNavigationMenu a:hover {
+table.menuItem a:hover {
     color: #8080F0;
 }
 
@@ -119,4 +118,16 @@ div#mainNavigationMotto {
     position: relative;
     top: 100px;
 
+}
+
+div#menuPopupContainer {
+    width: 300px;
+    position: absolute;
+    left: 450px;
+    top: 105px;
+    height: 50px;
+}
+
+div.menuPopupInner {
+    visibility: hidden;
 }

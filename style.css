@@ -2,8 +2,7 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 14px;
     color: #333393;
-    background: #90F1F1;
-    background: #76F7FF;
+    background: url('images/background2.jpg');
 }
 
 p {
@@ -14,6 +13,7 @@ p {
 h1 {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #FF9F00;
+    color: #F0F0A0;
     font-size: 50px;
     font-weight: bold;
     left: 20px;
@@ -92,8 +92,11 @@ a:active {
     left: 5%;
     padding-bottom:2cm;
     width: 90%;
-    background-color: white;
-    opacity: 0.6;
+    background-color: #E5E5D0;
+    background: #FFFC66;
+    background: #FDFAD0;
+    color: #58371C;
+    opacity: 0.8;
 }
 
 #reference {

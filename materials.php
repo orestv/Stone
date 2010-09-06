@@ -38,9 +38,10 @@ nMaxIds = arrSamples.length;
 
         <?php include('navigation.php');?>
     <div id="centerDoc">
-        <h2>Примеры используемых материалов</h2>
-
-        
+        <h2>Приклади матеріалів, які ви можете замовити:</h2>
+        <p>
+            При замовленні вкажіть номер текстури, вказаний біля малюнка - це збереже ваш час.
+        </p>
     </div>
         <?php echo generateGalleryDivs();?>
     </body>

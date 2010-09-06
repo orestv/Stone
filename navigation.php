@@ -8,10 +8,10 @@ $arrMenu = array('index.php' => 'Головна',
     'menuCapabilities' => array(
         'ITEM_NAME' => 'Наші можливості',
         'offers.php' => 'Пропозиції',
-        'http://www.yandex.ru' => 'Яндекс'
+        'comparison.php' => 'Переваги'
     ),
     'history.php' => 'Догляд за виробами', 
-    'details.php' => 'Контакти', 
+    'contacts.php' => 'Контакти', 
     );
 ?>
 
@@ -48,7 +48,7 @@ $arrMenu = array('index.php' => 'Головна',
     </div> 
 </div>
 <div id="mainNavigationMotto">
-    Супер. Пафосний. Девіз.
+    Швидше. Глибше. Сильніше.
 </div>
 
 <div id="menuPopupContainer"><?php echo $strPopupMenus?></div>

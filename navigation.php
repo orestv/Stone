@@ -48,7 +48,7 @@ $arrMenu = array('index.php' => 'Головна',
     </div> 
 </div>
 <div id="mainNavigationMotto">
-    Швидше. Глибше. Сильніше.
+    Широкий вибір. Надійність. Індивідуальний підхід.
 </div>
 
 <div id="menuPopupContainer"><?php echo $strPopupMenus?></div>

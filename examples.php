@@ -30,7 +30,7 @@ nMaxIds = arrSamples.length;
 <script type="text/javascript" src="func.js"></script>
 <script type="text/javascript" src="gallery.js"></script>
 
-<title>Галлерея</title>
+<title>Приклади матеріалів</title>
 </head>
 <body onload="generateList();">
 

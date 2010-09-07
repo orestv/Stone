@@ -2,7 +2,7 @@
 
     <head>
 
-        <title>Контакти</title>
+        <title>Порівняння</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <link href="navigation.css" rel="stylesheet" type="text/css"/>
@@ -225,15 +225,15 @@
     </TR>
     <TR VALIGN=TOP>
         <TD>
-            <B>радіаційність</B>
+            <B>радіоактивність</B>
         </TD>
         <TD>
             не
-            радіаційний
+            радіоактивний
         </TD>
         <TD>
             з
-            вмістом радіаційних частинок
+            вмістом радіоактивних частинок
         </TD>
     </TR>
 </TABLE>

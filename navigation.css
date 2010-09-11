@@ -43,6 +43,7 @@ td.tdLeft {
 }
 
 td.tdCenter {
+    width: 90px;
     max-width: 90px;
     background: url('images/tdCenter.png') no-repeat;
 }

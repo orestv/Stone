@@ -39,17 +39,16 @@ td.menuButton {
 }
 
 td.tdLeft {
-    background: url('images/tdLeft.png');
+    background: url('images/tdLeft.png') no-repeat;
 }
 
 td.tdCenter {
     max-width: 90px;
-    background: url('images/tdCenter.png');
-    background-repeat: no-repeat;
+    background: url('images/tdCenter.png') no-repeat;
 }
 
 td.tdRight {
-    background: url('images/tdRight.png');
+    background: url('images/tdRight.png') no-repeat;
 }
 
 

@@ -15,9 +15,9 @@ $arrMenu = array('index.php' => 'Головна',
     ),
     'menuInformation' => array(
         'ITEM_NAME' => 'Додаткова інформація',
+        'care.php' => 'Догляд за виробами',
         'certificates.php' => 'Сертифікати'
     ),
-    'care.php' => 'Догляд за виробами', 
     'contacts.php' => 'Контакти', 
     );
 ?>
@@ -55,7 +55,7 @@ $arrMenu = array('index.php' => 'Головна',
     </div> 
 </div>
 <div id="mainNavigationMotto">
-    Широкий вибір. Надійність. Індивідуальний підхід.
+    Надійність. Широкий вибір. Індивідуальний підхід.
 </div>
 
 <div id="menuPopupContainer"><?php echo $strPopupMenus?></div>

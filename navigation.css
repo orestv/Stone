@@ -43,7 +43,7 @@ td.tdLeft {
 }
 
 td.tdCenter {
-    width: 90px;
+    max-width: 90px;
     background: url('images/tdCenter.png');
     background-repeat: no-repeat;
 }
@@ -66,8 +66,7 @@ table.menuItem a:hover {
 
 div#mainNavigationLogo {
     float: left;
-    bottom: 0px;
-    left: 230px;
+    margin-left: -10px;
     width: 200px;
     height: 100px;
     border: none;
@@ -129,5 +128,5 @@ div#menuPopupContainer {
 }
 
 div.menuPopupInner {
-    visibility: hidden;
+    display: none;
 }

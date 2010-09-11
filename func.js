@@ -20,7 +20,8 @@ function hideAllPopups()
         var x;
         for (x = 0; x < dvMenu.childNodes.length; x++)
         {
-            dvMenu.childNodes[x].style.visibility = 'hidden';
+            //dvMenu.childNodes[x].style.visibility = 'hidden';
+            dvMenu.childNodes[x].style.display = 'none';
         }
     }
 
@@ -29,7 +30,8 @@ function hideAllPopups()
 function showPopup(popup)
 {
     hideAllPopups();
-    popup.style.visibility = 'visible';
+    //popup.style.visibility = 'visible';
+    popup.style.display = 'block';
     fadeIn(popup.id, 0.);
 }
 

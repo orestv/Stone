@@ -3,12 +3,19 @@
 $strMenuItem = '<td class="menuButton tdLeft"></td><td class="menuButton tdCenter"><a href="%1$s">%2$s</a></td><td class="menuButton tdRight"></td><td></td>';
 
 $arrMenu = array('index.php' => 'Головна',
-    'examples.php' => 'Галерея виробів',
-    'materials.php' => 'Гама кольорів', 
+    'menuExamples' => array(
+        'ITEM_NAME' => 'Галерея',
+        'examples.php' => 'Галерея виробів',
+        'materials.php' => 'Гама кольорів'
+    ),
     'menuCapabilities' => array(
         'ITEM_NAME' => 'Наші можливості',
         'offers.php' => 'Пропозиції',
         'comparison.php' => 'Переваги'
+    ),
+    'menuInformation' => array(
+        'ITEM_NAME' => 'Додаткова інформація',
+        'certificates.php' => 'Сертифікати'
     ),
     'care.php' => 'Догляд за виробами', 
     'contacts.php' => 'Контакти', 

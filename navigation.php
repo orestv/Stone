@@ -6,16 +6,16 @@ $arrMenu = array('index.php' => 'Головна',
     'examples.php' => 'Галерея виробів',
     'materials.php' => 'Гама кольорів',
     'menuCapabilities' => array(
-        'ITEM_NAME' => 'Наші можливості',
-        'advantages.php' => 'Переваги',
-        'basins.php' => 'Форми раковин',
-        'shapes.php' => 'Бортики та торці'
+        'ITEM_NAME' => 'Наші можливості'
+        ,'basins.php' => 'Форми раковин'
+        ,'shapes.php' => 'Бортики та торці'
+        ,'advantages.php' => 'Переваги'
     ),
     'menuInformation' => array(
-        'ITEM_NAME' => 'Додаткова інформація',
-        'care.php' => 'Догляд за виробами',
-        'comparison.php' => 'Порівняння',
-        'certificates.php' => 'Сертифікати'
+        'ITEM_NAME' => 'Додаткова інформація'
+        ,'care.php' => 'Догляд за виробами'
+        ,'comparison.php' => 'Порівняння'
+        ,'certificates.php' => 'Сертифікати'
     ),
     'contacts.php' => 'Контакти', 
     );

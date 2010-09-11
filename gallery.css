@@ -4,6 +4,7 @@
     height: 120px;
     margin: 10px;
     border: 3px inset #FEFEFE;
+    border: 5px ridge gray;
     padding: 10px;
     float: left;
     overflow: hidden;

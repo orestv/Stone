@@ -63,11 +63,11 @@ function generateList()
         
         div.onmouseover = function(event)
         {
-            this.style.borderStyle = 'outset';
+            this.style.borderStyle = 'groove';
         }
         div.onmouseout = function(event)
         {
-            this.style.borderStyle = 'inset';
+            this.style.borderStyle = 'ridge';
         }
         var innerDiv = document.createElement('div');
         innerDiv.setAttribute('class', 'galleryItemInner');

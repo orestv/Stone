@@ -16,7 +16,7 @@ $arrMenu = array('index.php' => 'Головна',
     'menuInformation' => array(
         'ITEM_NAME' => 'Додаткова інформація',
         'basins.php' => 'Форми раковин',
-        'shapes.php' => 'Кромки та торці',
+        'shapes.php' => 'Бортики та торці',
         'care.php' => 'Догляд за виробами',
         'certificates.php' => 'Сертифікати'
     ),

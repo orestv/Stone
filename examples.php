@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Приклади виробів</title>
+<title>Галерея виробів</title>
 <meta name="generator" content=
 "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org">
 

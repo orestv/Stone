@@ -15,10 +15,16 @@
             <h2>Наші телефони:</h2>
                 <ul>
                 <li>
-                097 946 1982
+                тел. 097 946 1982 - Микола
                 </li>
                 <li>
-                068 198 2674
+                тел. 068 198 2674 - Олена
+                </li>
+                <li>
+                e-mail: <a href="mailto:aspis.omega@gmail.com">aspis.omega@gmail.com</a>
+                </li>
+                <li>
+                Skype: anna.nickolai
                 </li>
                 </ul>
         </div>
